@@ -1,26 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_div_mod.c                                       :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sinlee <sinlee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/28 17:44:57 by sinlee            #+#    #+#             */
-/*   Updated: 2023/03/28 17:44:57 by sinlee           ###   ########.fr       */
+/*   Created: 2023/03/29 17:39:35 by sinlee            #+#    #+#             */
+/*   Updated: 2023/03/29 17:39:35 by sinlee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-void	ft_div_mod(int a, int b, int *div, int *mod)
+unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
-	*div = a / b;
-	*mod = a % b;
-}
+	unsigned int	i;
 
-int main()
-{
-	int div, mod;
-
-	ft_div_mod(3, 2, &div, &mod);
-	printf("%d %d\n", div, mod);
+	i = 0;
+	if (size > 0)
+	{
+		while (i < size && src[i])
+		{
+			dest[i] = src[i];
+			++i;
+		}
+		while (dest[i])
+			++i;
+		dest[i] = '\0';
+		i = 0;
+		while (src[i] != '\0')
+			++i;
+	}
+	return (i);
 }
