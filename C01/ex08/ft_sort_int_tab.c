@@ -6,11 +6,9 @@
 /*   By: sinlee <sinlee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/28 18:18:12 by sinlee            #+#    #+#             */
-/*   Updated: 2023/03/28 18:18:12 by sinlee           ###   ########.fr       */
+/*   Updated: 2023/03/29 10:18:28 by sinlee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 // sorting algorithm: selection sort
 // time complexity: O(n^2)

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_memory.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sinlee <sinlee@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sinlee <sinlee@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/30 18:32:09 by sinlee            #+#    #+#             */
-/*   Updated: 2023/03/30 18:32:09 by sinlee           ###   ########.fr       */
+/*   Updated: 2023/04/03 16:41:20 by sinlee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ void	paddrhex(void *str)
 
 void	pcontenthex(void *str, unsigned int size)
 {
-	int	i;
+	unsigned int	i;
 
 	i = 0;
 	while (i < size && i < 16)

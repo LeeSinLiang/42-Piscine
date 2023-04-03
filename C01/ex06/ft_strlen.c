@@ -6,11 +6,11 @@
 /*   By: sinlee <sinlee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/28 17:59:09 by sinlee            #+#    #+#             */
-/*   Updated: 2023/03/28 17:59:09 by sinlee           ###   ########.fr       */
+/*   Updated: 2023/03/29 10:23:53 by sinlee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	t_strlen(char *str)
+int	ft_strlen(char *str)
 {
 	int	i;
 

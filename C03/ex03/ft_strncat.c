@@ -1,26 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sinlee <sinlee@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sinlee <sinlee@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/28 17:45:57 by sinlee            #+#    #+#             */
-/*   Updated: 2023/04/01 12:34:39 by sinlee           ###   ########.fr       */
+/*   Created: 2023/04/03 19:43:22 by sinlee            #+#    #+#             */
+/*   Updated: 2023/04/03 19:47:12 by sinlee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ultimate_div_mod(int *a, int *b)
+char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
-	int	temp;
+	int				i;
+	unsigned int	j;
 
-	temp = *a % *b;
-	*a = *a / *b;
-	*b = temp;
-}
-
-void test()
-{
-	int diva;
-	int modb;
+	i = 0;
+	j = 0;
+	while (dest[i] != '\0')
+		++i;
+	while (src[i] != '\0' && j < nb)
+	{
+		dest[i] = src[i];
+		++i;
+		++j;
+	}
+	dest[i] = '\0';
+	return (dest);
 }

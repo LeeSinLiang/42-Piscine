@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcapitalize.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sinlee <sinlee@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sinlee <sinlee@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 17:39:41 by sinlee            #+#    #+#             */
-/*   Updated: 2023/03/29 17:39:41 by sinlee           ###   ########.fr       */
+/*   Updated: 2023/03/31 11:07:50 by sinlee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,13 @@ void	ft_strlowcase(char *c)
 void	check(char *str, int *i, int *nextup)
 {
 	if (str[*i] >= 'A' && str[*i] <= 'Z')
+	{
 		ft_strlowcase(&str[*i]);
-	else if ((str[*i] >= '0' && str[*i] <= '9') \
-		|| (str[*i] >= 'a' && str[*i] <= 'z'))
+		*nextup = 0;
+	}
+	else if (str[*i] >= '0' && str[*i] <= '9')
+		*nextup = 0;
+	else if (str[*i] >= 'a' && str[*i] <= 'z')
 		*nextup = 0;
 	else
 		*nextup = 1;
@@ -49,7 +53,8 @@ char	*ft_strcapitalize(char *str)
 		if (i == 0 || nextup == 1)
 		{
 			nextup = 0;
-			if (str[i] >= 'a' && str[i] <= 'z')
+			if ((str[i] >= 'a' && str[i] <= 'z') \
+					|| (str[i] >= 'A' && str[i] <= 'Z'))
 			{
 				ft_strupcase(&str[i]);
 				++i;

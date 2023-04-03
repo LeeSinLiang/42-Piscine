@@ -1,26 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sinlee <sinlee@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sinlee <sinlee@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/28 17:45:57 by sinlee            #+#    #+#             */
-/*   Updated: 2023/04/01 12:34:39 by sinlee           ###   ########.fr       */
+/*   Created: 2023/04/03 10:15:27 by sinlee            #+#    #+#             */
+/*   Updated: 2023/04/03 17:19:32 by sinlee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ultimate_div_mod(int *a, int *b)
+int	ft_strcmp(char *s1, char *s2)
 {
-	int	temp;
-
-	temp = *a % *b;
-	*a = *a / *b;
-	*b = temp;
-}
-
-void test()
-{
-	int diva;
-	int modb;
+	while (*s1 != '\0' && (*s1 == *s2))
+	{
+		s1++;
+		s2++;
+	}
+	return (*(unsigned char *)s1 - *(unsigned char *)s2);
 }

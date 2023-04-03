@@ -6,7 +6,7 @@
 /*   By: sinlee <sinlee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/30 17:03:02 by sinlee            #+#    #+#             */
-/*   Updated: 2023/03/30 17:03:02 by sinlee           ###   ########.fr       */
+/*   Updated: 2023/03/31 10:55:42 by sinlee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,6 @@ void	hexa(unsigned char c)
 void	ft_putstr_non_printable(char *str)
 {
 	int		i;
-	int		convert;
-	char	conversion;
 
 	i = 0;
 	while (str[i] != '\0')
