@@ -19,8 +19,8 @@ int main() {
    // the resultant string is stored in str1.
    ft_strncat(str3, str4, 3);
 
-   puts(str1);
-   puts(str2);
+   puts(str3);
+   puts(str4);
 
    return 0;
 }

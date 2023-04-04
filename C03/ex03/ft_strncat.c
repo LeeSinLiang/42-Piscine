@@ -21,7 +21,7 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 		++i;
 	while (src[i] != '\0' && j < nb)
 	{
-		dest[i] = src[i];
+		dest[i] = src[j];
 		++i;
 		++j;
 	}

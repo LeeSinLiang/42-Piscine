@@ -13,14 +13,14 @@ int main() {
 	puts(str1);
 	puts(str2);
 	printf("\n");
-	char str3[100] = "This is ", str4[] = "programiz.com";
+	char str3[100] = "This is ", str4[] = "pro";
 
    // concatenates str1 and str2
    // the resultant string is stored in str1.
    ft_strcat(str3, str4);
 
-   puts(str1);
-   puts(str2);
+   puts(str3);
+   puts(str4);
 
    return 0;
 }

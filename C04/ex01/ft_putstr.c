@@ -1,29 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sinlee <sinlee@student42.fr>               +#+  +:+       +#+        */
+/*   By: sinlee <sinlee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/03 19:23:27 by sinlee            #+#    #+#             */
-/*   Updated: 2023/04/03 19:47:18 by sinlee           ###   ########.fr       */
+/*   Created: 2023/04/04 16:10:53 by sinlee            #+#    #+#             */
+/*   Updated: 2023/04/04 16:10:53 by sinlee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcat(char *dest, char *src)
-{
-	int	i;
-	int	j;
+#include <unistd.h>
 
-	i = 0;
-	j = -1;
-	while (dest[i] != '\0')
-		++i;
-	while (src[++j] != '\0')
-	{
-		dest[i] = src[j];
-		++i;
-	}
-	dest[i] = '\0';
-	return (dest);
+void ft_putstr(char *str)
+{
+	while (*str)
+		write(1, str++, 1);
 }

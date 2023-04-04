@@ -1,29 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sinlee <sinlee@student42.fr>               +#+  +:+       +#+        */
+/*   By: sinlee <sinlee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/03 19:23:27 by sinlee            #+#    #+#             */
-/*   Updated: 2023/04/03 19:47:18 by sinlee           ###   ########.fr       */
+/*   Created: 2023/04/04 16:09:20 by sinlee            #+#    #+#             */
+/*   Updated: 2023/04/04 16:09:20 by sinlee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcat(char *dest, char *src)
+int ft_strlen(char *str)
 {
 	int	i;
-	int	j;
 
 	i = 0;
-	j = -1;
-	while (dest[i] != '\0')
+	while (str[i] != '\0')
 		++i;
-	while (src[++j] != '\0')
-	{
-		dest[i] = src[j];
-		++i;
-	}
-	dest[i] = '\0';
-	return (dest);
+	return i;
 }
