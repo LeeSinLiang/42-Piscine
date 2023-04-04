@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_atoi_base.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sinlee <sinlee@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/04/04 22:15:35 by sinlee            #+#    #+#             */
+/*   Updated: 2023/04/04 22:15:35 by sinlee           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdbool.h>
 #include <unistd.h>
 
@@ -33,9 +45,9 @@ bool	is_valid(char *base)
 	return (true);
 }
 
-bool is_space(char c)
+bool	is_space(char c)
 {
-	char *str;
+	char	*str;
 
 	str = "\t\n\v\f\r ";
 	while (*str)
@@ -47,13 +59,34 @@ bool is_space(char c)
 	return (false);
 }
 
-int ft_atoi_base(char *str, char *base)
+int	solve(char *str, char *base, int result, int ans)
+{
+	int	i;
+	int	j;
+
+	i = -1;
+	while (str[++i] != '\0')
+	{
+		j = -1;
+		while (base[++j] != '\0')
+		{
+			if (str[i] == base[j])
+			{
+				ans *= count(base);
+				ans += j;
+				break ;
+			}
+		}
+		if (base[j] == '\0')
+			return (ans * result);
+	}
+	return (ans * result);
+}
+
+int	ft_atoi_base(char *str, char *base)
 {
 	int	result;
-	int	i, j;
-	int	ans;
 
-	ans = 0;
 	result = 1;
 	if (is_valid(base))
 	{
@@ -63,24 +96,7 @@ int ft_atoi_base(char *str, char *base)
 				result *= -1;
 			str++;
 		}
-		i = -1;
-		while (str[++i] != '\0')
-		{
-			j = -1;
-			while (base[++j] != '\0')
-			{
-				if (str[i] == base[j])
-				{
-					ans *= count(base);
-					ans += j;
-					break ;
-				}
-			}
-			if (base[j] == '\0')
-				return (ans*result);
-		}
-		return (ans*result);
+		return (solve(str, base, result, 0));
 	}
-	else
-		return (0);
+	return (0);
 }
