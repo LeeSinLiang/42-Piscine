@@ -7,7 +7,7 @@ int main()
 {
 	ft_putnbr_base(123456, "0123456789");
 	printf("\n");
-	ft_putnbr_base(123456, "01");
+	ft_putnbr_base(1234, "01");
 	printf("\n");
 	ft_putnbr_base(123456, "0123456789ABCDEF");
 	printf("\n");

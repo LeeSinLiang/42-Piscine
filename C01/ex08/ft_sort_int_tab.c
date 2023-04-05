@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_sort_int_tab.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sinlee <sinlee@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sinlee <sinlee@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/28 18:18:12 by sinlee            #+#    #+#             */
-/*   Updated: 2023/03/29 10:18:28 by sinlee           ###   ########.fr       */
+/*   Updated: 2023/04/05 11:57:12 by sinlee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,22 @@ void	swap(int a, int b, int *tab)
 	tab[b] = temp;
 }
 
+// 6 1 2 4 3 5
+/*
+	First element: 6
+	Smallest value index: 1
+	swap(arr[0], arr[1])
+	1 6 2 4 3 5
+	Second element: 6
+	Smallest value index: 2
+	swap(arr[1], arr[2])
+	1 2 6 4 3 5
+	Third element: 6
+	Smallest value index: 4
+	swap(arr[2], arr[4])
+	
+*/
+
 void	ft_sort_int_tab(int *tab, int size)
 {
 	int	i;
@@ -32,7 +48,7 @@ void	ft_sort_int_tab(int *tab, int size)
 	int	min[2];
 	int	check;
 
-	i = 0;
+	i = 0; // O(1)
 	while (i < size - 1)
 	{
 		check = 0;

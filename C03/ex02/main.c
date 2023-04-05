@@ -4,7 +4,7 @@
 char *ft_strcat(char *dest, char *src);
 
 int main() {
-	char str1[100] = "This is ", str2[] = "programiz.com";
+	char str1[100] = "This is ", str2[] = "pro";
 
 	// concatenates str1 and str2
 	// the resultant string is stored in str1.

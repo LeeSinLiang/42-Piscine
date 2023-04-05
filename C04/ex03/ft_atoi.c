@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sinlee <sinlee@student42.fr>               +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/04/05 10:33:07 by sinlee            #+#    #+#             */
+/*   Updated: 2023/04/05 10:33:13 by sinlee           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdbool.h>
 
 bool	is_in_string(char c, char *str)
@@ -19,8 +31,8 @@ bool	is_space(char c)
 int	ft_atoi(char *str)
 {
 	int	i;
-	int ans;
-	int result;
+	int	ans;
+	int	result;
 
 	i = 0;
 	ans = 0;
@@ -39,5 +51,5 @@ int	ft_atoi(char *str)
 		ans += *str - 48;
 		str++;
 	}
-	return (result*ans);
+	return (result * ans);
 }

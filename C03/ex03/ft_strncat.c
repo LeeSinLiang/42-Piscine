@@ -6,7 +6,7 @@
 /*   By: sinlee <sinlee@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 19:43:22 by sinlee            #+#    #+#             */
-/*   Updated: 2023/04/03 19:47:12 by sinlee           ###   ########.fr       */
+/*   Updated: 2023/04/05 10:17:29 by sinlee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 	j = 0;
 	while (dest[i] != '\0')
 		++i;
-	while (src[i] != '\0' && j < nb)
+	while (src[j] != '\0' && j < nb)
 	{
 		dest[i] = src[j];
 		++i;
