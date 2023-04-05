@@ -6,7 +6,7 @@
 /*   By: sinlee <sinlee@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 20:07:18 by sinlee            #+#    #+#             */
-/*   Updated: 2023/04/05 20:07:32 by sinlee           ###   ########.fr       */
+/*   Updated: 2023/04/05 20:07:55 by sinlee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,4 +28,5 @@ bool	is_valid(int *position, int c)
 
 int	ft_ten_queens_puzzle(void)
 {
+	return (0);
 }
