@@ -1,7 +1,8 @@
 #include <stdbool.h>
 #include <unistd.h>
 
-bool	is_valid(int position, int c)
+// check diagonals
+bool	is_valid(int *position, int c)
 {
 	int	i;
 
@@ -11,7 +12,6 @@ bool	is_valid(int position, int c)
 		if (position == c)
 			return (false);
 	}
-	// check for diagonals
 }
 
 int	ft_ten_queens_puzzle(void)
