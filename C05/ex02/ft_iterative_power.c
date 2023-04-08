@@ -6,7 +6,7 @@
 /*   By: sinlee <sinlee@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 12:48:43 by sinlee            #+#    #+#             */
-/*   Updated: 2023/04/05 12:54:12 by sinlee           ###   ########.fr       */
+/*   Updated: 2023/04/07 12:00:38 by sinlee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ int	ft_iterative_power(int nb, int power)
 	}
 	return (nb);
 }
+
 /*
 #include <stdio.h>
 int	main()

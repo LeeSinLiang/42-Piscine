@@ -6,12 +6,14 @@
 /*   By: sinlee <sinlee@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 12:59:15 by sinlee            #+#    #+#             */
-/*   Updated: 2023/04/05 16:27:36 by sinlee           ###   ########.fr       */
+/*   Updated: 2023/04/08 12:27:46 by sinlee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_fibonacci(int index)
 {
+	if (index < 0)
+		return (-1);
 	if (index == 0)
 		return (0);
 	if (index == 1)

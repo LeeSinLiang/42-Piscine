@@ -6,7 +6,7 @@
 /*   By: sinlee <sinlee@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 16:42:49 by sinlee            #+#    #+#             */
-/*   Updated: 2023/04/05 16:53:25 by sinlee           ###   ########.fr       */
+/*   Updated: 2023/04/07 12:08:40 by sinlee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,7 @@ int	main(int argc, char **argv)
 }
 */
 
+/*
 #include <stdio.h>
 #include <limits.h>
 int	main(void)
@@ -65,3 +66,4 @@ int	main(void)
 	}
 	printf("find_next_prime(%d) = %d\n", INT_MAX, ft_find_next_prime(INT_MAX));
 }
+*/

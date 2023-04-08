@@ -1,0 +1,6 @@
+*.exe
+*.out
+main.c
+t.c
+backup.c
+.vscode/
