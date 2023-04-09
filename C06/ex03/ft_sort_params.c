@@ -11,6 +11,13 @@
 /* ************************************************************************** */
 
 #include <stdbool.h>
+#include <unistd.h>
+
+void	ft_putstr(char *str)
+{
+	while (*str)
+		write(1, str++, 1);
+}
 
 void	ft_swap(char **a, char **b)
 {
@@ -53,8 +60,6 @@ void	sort(char **str, int size)
 			break ;
 	}
 }
-
-#include <stdio.h>
 
 int	main(int argc, char **argv)
 {
