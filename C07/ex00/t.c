@@ -1,8 +1,20 @@
-#include <stdlib.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   t.c                                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sinlee <sinlee@student42.fr>               +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/04/10 11:11:27 by sinlee            #+#    #+#             */
+/*   Updated: 2023/04/10 11:12:29 by sinlee           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
-int		ft_str_length(char *str)
+int	ft_str_length(char *str)
 {
 	int	index;
 
@@ -18,7 +30,8 @@ char	*ft_strdup(char *src)
 	char	*dest;
 
 	index = 0;
-	if ((dest = (char *)malloc(ft_str_length(src) * sizeof(char) + 1)) == NULL)
+	dest = (char *)malloc(ft_str_length(src) * sizeof(char) + 1);
+	if (dest == NULL)
 		return (0);
 	while (src[index])
 	{
@@ -29,7 +42,7 @@ char	*ft_strdup(char *src)
 	return (dest);
 }
 
-int		main(void)
+int	main(void)
 {
 	char	*str;
 	char	*allocated;

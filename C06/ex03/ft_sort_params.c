@@ -6,13 +6,13 @@
 /*   By: sinlee <sinlee@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/08 17:13:34 by sinlee            #+#    #+#             */
-/*   Updated: 2023/04/08 18:06:13 by sinlee           ###   ########.fr       */
+/*   Updated: 2023/04/10 15:36:32 by sinlee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdbool.h>
 #include <unistd.h>
-
+#include <stdio.h>
 void	ft_putstr(char *str)
 {
 	while (*str)
@@ -27,6 +27,7 @@ void	ft_swap(char **a, char **b)
 	*a = *b;
 	*b = tmp;
 }
+
 
 int	ft_strcmp(char *s1, char *s2)
 {
@@ -63,14 +64,14 @@ void	sort(char **str, int size)
 
 int	main(int argc, char **argv)
 {
-	int	index;
+	int	i;
 
 	if (argc > 2)
 		sort(argv, argc - 1);
-	index = 0;
-	while (++index < argc)
+	i = 0;
+	while (++i < argc)
 	{
-		ft_putstr(argv[index]);
+		ft_putstr(argv[i]);
 		ft_putstr("\n");
 	}
 }
