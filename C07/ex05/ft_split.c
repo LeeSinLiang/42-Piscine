@@ -6,12 +6,13 @@
 /*   By: sinlee <sinlee@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 09:46:08 by sinlee            #+#    #+#             */
-/*   Updated: 2023/04/11 16:39:44 by sinlee           ###   ########.fr       */
+/*   Updated: 2023/04/11 19:23:55 by sinlee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdbool.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 int		count_words(char *str, char *charset, int len);
 bool	ft_strstr(char *str, char *to_find);
@@ -86,28 +87,30 @@ int	insert(char *arr, char *str, char *charset)
 	return (i - 1);
 }
 
+// attr i , len
 char	**ft_split(char *str, char *charset)
 {
 	char	**arr;
-	int		i;
-	int		len;
+	int		attr[2];
 
-	i = 0;
-	len = count_str(charset, 0);
-	arr = (char **)malloc((count_words(str, charset, len) + 1) * 8);
-	arr[count_words(str, charset, len)] = 0;
-	if (str[0] == '\0')
+	attr[0] = 0;
+	attr[1] = count_str(charset, 0);
+	arr = (char **)malloc((count_words(str, charset, attr[1]) + 1) * 8);
+	printf("%d\n", count_words(str, charset, attr[1]));
+	arr[count_words(str, charset, attr[1])] = 0;
+	if (str[0] == '\0' || insert((char *)malloc((count_str(str, charset) + 1)), \
+		str, charset) == -1)
 		return (arr);
 	arr[0] = (char *)malloc((count_str(str, charset) + 1));
 	insert(arr[0], str, charset);
 	while (*str && str++)
 	{
 		if (ft_strstr(str, charset) \
-		&& (*(str + len) >= 33 && *(str + len) <= 126) && ++i)
+		&& (*(str + attr[1]) >= 33 && *(str + attr[1]) <= 126) && ++attr[0])
 		{
-			str = str + len;
-			arr[i] = malloc(count_str(str, charset) + 1);
-			str = str + (insert(arr[i], str, charset));
+			str = str + attr[1];
+			arr[attr[0]] = malloc(count_str(str, charset) + 1);
+			str = str + (insert(arr[attr[0]], str, charset));
 		}
 		if (*str == '\0')
 			break ;
