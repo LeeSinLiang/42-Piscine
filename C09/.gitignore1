@@ -1,0 +1,11 @@
+*.exe
+*.out
+*.o
+libft.a
+main.c
+t.c
+backup.c
+.vscode/
+old.c
+includes/
+srcs/
