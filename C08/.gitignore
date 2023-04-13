@@ -1,7 +1,9 @@
 *.exe
 *.out
+*.gch
 main.c
 t.c
 backup.c
 .vscode/
 old.c
+ft_stock_str.h

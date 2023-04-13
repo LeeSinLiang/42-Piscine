@@ -1,33 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_rev_params.c                                    :+:      :+:    :+:   */
+/*   ft_point.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sinlee <sinlee@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/08 13:05:43 by sinlee            #+#    #+#             */
-/*   Updated: 2023/04/13 15:14:49 by sinlee           ###   ########.fr       */
+/*   Created: 2023/04/13 10:10:22 by sinlee            #+#    #+#             */
+/*   Updated: 2023/04/13 10:10:37 by sinlee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#ifndef FT_POINT_H
+# define FT_POINT_H
 
-void	recursion(char **str, int i)
+typedef struct t_point
 {
-	int	j;
+	int	x;
+	int	y;
+}		t_point;
 
-	j = -1;
-	if (!(str[i]))
-		return ;
-	recursion(str, i + 1);
-	while (str[i][++j])
-		write(1, &str[i][j], 1);
-	write(1, "\n", 1);
-}
-
-int	main(int argc, char **argv)
-{
-	if (argc > 1)
-		recursion(argv, 1);
-	return (0);
-}
+#endif

@@ -1,33 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_rev_params.c                                    :+:      :+:    :+:   */
+/*   ft_abs.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sinlee <sinlee@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/08 13:05:43 by sinlee            #+#    #+#             */
-/*   Updated: 2023/04/13 15:14:49 by sinlee           ###   ########.fr       */
+/*   Created: 2023/04/12 10:43:07 by sinlee            #+#    #+#             */
+/*   Updated: 2023/04/12 10:43:17 by sinlee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#ifndef FT_ABS_H
+# define FT_ABS_H
 
-void	recursion(char **str, int i)
-{
-	int	j;
+# define ABS(Value) (Value < 0 ? -Value : Value)
 
-	j = -1;
-	if (!(str[i]))
-		return ;
-	recursion(str, i + 1);
-	while (str[i][++j])
-		write(1, &str[i][j], 1);
-	write(1, "\n", 1);
-}
-
-int	main(int argc, char **argv)
-{
-	if (argc > 1)
-		recursion(argv, 1);
-	return (0);
-}
+#endif

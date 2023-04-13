@@ -6,7 +6,7 @@
 /*   By: sinlee <sinlee@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/10 17:11:41 by sinlee            #+#    #+#             */
-/*   Updated: 2023/04/11 16:32:37 by sinlee           ###   ########.fr       */
+/*   Updated: 2023/04/12 09:33:14 by sinlee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,9 +86,11 @@ char	*ft_convert_base(char *nbr, char *base_from, char *base_to)
 	return (0);
 }
 
+/*
 #include <stdio.h>
 int	main(int argc, char **argv)
 {
 	printf("%s", ft_convert_base(argv[1], argv[2], argv[3]));
 	return (0);
 }
+*/

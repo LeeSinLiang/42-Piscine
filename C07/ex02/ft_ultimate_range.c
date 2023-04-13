@@ -6,7 +6,7 @@
 /*   By: sinlee <sinlee@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/10 11:08:54 by sinlee            #+#    #+#             */
-/*   Updated: 2023/04/11 16:22:08 by sinlee           ###   ########.fr       */
+/*   Updated: 2023/04/12 10:00:26 by sinlee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_ultimate_range(int **range, int min, int max)
 	int	i;
 
 	i = 0;
-	if (max < min)
+	if (min >= max)
 	{
 		*range = NULL;
 		return (0);
