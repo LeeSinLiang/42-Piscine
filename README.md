@@ -2,21 +2,14 @@
 
 This README file serves as an overview of the 42 C Piscine Projects. These projects were completed during a 4-week intensive program aimed at teaching the fundamentals of the C programming language. Each project focuses on a specific aspect of C programming, building upon the knowledge and skills gained in the previous projects.
 
-## Projects
+## Rush Projects
 
-The following is a list of the projects completed during the 42 C Piscine, in the order they were completed:
+The following is a list of the group projects (known as Rush Projects) completed during the 42 Piscine, in the order they were completed:
 
-1. **Rush 00**: In this project, we created a program that generates a square or rectangle made up of characters, based on user input.
+1. **Rush 00**: In this project, we created a program that generates a sequence of patterns in the form of a NxN grid.
+2. **Rush 01**: Refer to Skyscraper Project.
 
-2. **Rush 01**: Refer to Skyscraper Project
-
-3. **Exam Rank 02**: In this project, we completed a mock exam to prepare for the actual exam at the end of the Piscine.
-
-4. **Push_swap**: In this project, we created a program that sorts a stack of integers using a limited set of operations.
-
-5. **C Piscine Final Exam**: In this project, we completed the final exam for the C Piscine.
-
-## Knowledge Learned
+## Knowledge Accquired
 
 Throughout the Piscine, we gained knowledge and skills in the following areas of C programming, in the following order:
 
@@ -26,11 +19,11 @@ Throughout the Piscine, we gained knowledge and skills in the following areas of
 
 3. **String Manipulation**: We learned how to manipulate strings in C, including concatenation, copying, and searching.
 
-4. **Base Conversion**: We learned how to convert between different number bases, including decimal, hexadecimal, and binary.
+4. **Base Conversion**: We learned how to convert between different number bases, including decimal, hexadecimal, and binary bases.
 
-5. **Command Line Arguments**: We learned how to pass arguments to a C program through the command line, and how to parse and use them.
+5. **Command Line Arguments**: We learned how to pass arguments to a C program through the command line, and how to use them.
 
-6. **Memory Allocation**: We learned about memory allocation in C, including dynamic memory allocation using malloc, calloc, and realloc.
+6. **Memory Allocation**: We learned about memory allocation in C, including dynamic memory allocation using `malloc` and free dynamic memory using `free`.
 
 7. **Recursion**: We learned about recursion, and how to use it to solve problems that can be broken down into smaller, similar problems.
 
@@ -42,9 +35,5 @@ Throughout the Piscine, we gained knowledge and skills in the following areas of
 
 ## Resources
 
-The following are some resources that I found helpful during the 42 C Piscine:
+The following are some resources that I found helpful during the 42 Piscine:
 
-- [Learn C the Hard Way](https://learncodethehardway.org/c/)
-- [C Programming Language](https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628)
-- [The C Programming Language, 2nd Edition](https://www.amazon.com/C-Programming-Language-2nd/dp/0131103628)
-- [C Programming Wikibook](https://en.wikibooks.org/wiki/C_Pro
