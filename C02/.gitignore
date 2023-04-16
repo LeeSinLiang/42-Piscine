@@ -1,9 +1,0 @@
-main.c
-t.c
-a.exe
-*.out
-*.app
-*.exe
-*.i*86
-*.x86_64
-*.hex
