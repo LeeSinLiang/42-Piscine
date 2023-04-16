@@ -14,8 +14,8 @@ This repo serves as my workings of 42 Piscine C projects. These projects were co
  - [Rush Projects](https://github.com/LeeSinLiang/42_Piscine/blob/main/README.md#rush-projects)
  - [Knowledge Accquired](https://github.com/LeeSinLiang/42_Piscine/blob/main/README.md#knowledge-accquired)
  - [Resources](https://github.com/LeeSinLiang/42_Piscine/blob/main/README.md#resources)
- - [Practices (Problem Solving Questions)](https://github.com/LeeSinLiang/42_Piscine/blob/main/README.md#knowledge-accquired)
- - [Resources for further studies (After piscine)]()
+ - [Practices (Problem Solving Questions)](https://github.com/LeeSinLiang/42_Piscine#practices-problem-solving-questions)
+ - [Resources for further studies (After piscine)](https://github.com/LeeSinLiang/42_Piscine#resources-for-further-studies-after-piscine)
 
 ## Rush Projects
 
