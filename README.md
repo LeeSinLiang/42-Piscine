@@ -22,7 +22,7 @@ This repo serves as my workings of 42 Piscine C projects. These projects were co
 The following is a list of the group projects (known as Rush Projects) completed during the 42 Piscine, in the order they were completed:
 
 1. **Rush 00**: In this project, we created a program that generates a sequence of patterns in the form of a NxN grid.
-2. **Rush 01**: Refer to Skyscraper Project.
+2. **Rush 01**: Refer to [Skyscraper Project](https://github.com/LeeSinLiang/C-Skysrcaper-Puzzle).
 
 ## Knowledge Accquired
 
